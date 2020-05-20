@@ -1,0 +1,143 @@
+div.dataTables_wrapper div.dataTables_info {
+    white-space: unset;
+}
+#page-loader {
+    /* border: 1px solid red; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: rgba(0,0,0,0.3);
+}
+.page-loader-body {
+    overflow: hidden;
+}
+
+.material-loader {
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    /* left: 50%; */
+    width: 100%;
+}
+.material-loader .fa{
+    font-size: 100px;
+    color: red;
+}
+
+.material-loader .circular {
+    animation: rotate 2s linear infinite;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -50px;
+    margin-top: -120px;
+}
+
+table.dataTable.dtr-.collapsed > tbody > tr[role="row"] > td:first-child:before, table.dataTable.dtr-inline.collapsed > tbody > tr[role="row"] > th:first-child:before {
+    top: 12px;
+    left: 4px;
+    height: 14px;
+    width: 14px;
+    display: block;
+    position: absolute;
+    color: white;
+    border: 2px solid white;
+    border-radius: 14px;
+    box-shadow: 0 0 3px #444;
+    box-sizing: content-box;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 14px;
+    content: '+';
+    background-color: #0275d8;
+}
+
+table.dataTable.dtr-.collapsed > tbody > tr[role="row"] > td:first-child:before, table.dataTable.dtr-.collapsed > tbody > tr[role="row"] > th:first-child:before {
+    top: 12px;
+    left: 4px;
+    height: 14px;
+    width: 14px;
+    display: block;
+    position: absolute;
+    color: white;
+    border: 2px solid white;
+    border-radius: 14px;
+    box-shadow: 0 0 3px #444;
+    box-sizing: content-box;
+    text-align: center;
+    text-indent: 0 !important;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 14px;
+    content: '+';
+    background-color: #0275d8;
+}
+
+table.dataTable.dtr-.collapsed > tbody > tr.parent > td:first-child:before, table.dataTable.dtr-.collapsed > tbody > tr.parent > th:first-child:before {
+    content: '-';
+    background-color: #d33333;
+}
+
+table.dataTable.dtr-.collapsed > tbody > tr[role="row"] > td:first-child, table.dataTable.dtr-.collapsed > tbody > tr[role="row"] > th:first-child {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+/* .input-group.date {
+    padding: 0 15px;
+} */
+
+
+#indikatorConnection .text-danger {
+    animation: blink-animation 1s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+
+@media (min-width:992px) {
+    .modal-xl {
+        width: 99%;
+    }
+}
+
+
+.readonly {
+    pointer-events: none;
+    background-color: #eee;
+    opacity: 1;
+}
+
+.dataTable>thead>tr>th, .dataTable>thead>tr>td {
+    text-align: center;
+}
+
+.user-panel {
+    min-height: 80px;
+}
+
+.dataTable .heighttd {
+    max-height: 100px;
+    overflow-y: scroll;
+}
+
+label.error {
+    color: #de303a!important;
+}
+
+.form-group .form-control.error {
+    border-color: #de303a;
+}
