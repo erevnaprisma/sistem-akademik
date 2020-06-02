@@ -26,7 +26,7 @@ class Login extends CI_Controller
 
     public function session()
     {
-        // $this->session->set_userdata('logged', $_POST);
+        $this->session->set_userdata('logged', $_POST);
     }
 
     public function changepassword($id)
