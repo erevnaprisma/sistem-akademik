@@ -10,7 +10,7 @@ class M_kkm extends CI_Model
     public $alias = 'mst';
     public $id = 'id';
     public $order = 'DESC';
-    public $limit = 250;
+    public $limit = 50;
     public $sql = "
                         select * from (
                             select
