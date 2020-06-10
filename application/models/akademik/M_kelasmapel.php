@@ -10,7 +10,7 @@ class M_kelasmapel extends CI_Model
     public $alias = 'akm';
     public $id = 'id';
     public $order = 'DESC';
-    public $limit = 20;
+    public $limit = 50;
     public $sql = "
                         select * from (
                             select
