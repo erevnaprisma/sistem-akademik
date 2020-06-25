@@ -191,6 +191,7 @@ $(document).ready(function() {
                         id_jurusan: kelas.id_jurusan,
                         id_semester: kelas.id_semester,
                         id_tahun_ajaran: kelas.id_tahun_ajaran,
+                        id_kls: kelas.id_kelas,
                     },
                     method: "POST",
                     headers: {
