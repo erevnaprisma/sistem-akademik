@@ -197,9 +197,9 @@ $(document).ready(function() {
                     result += "<button href=\"" + __base_url + "admin/akademik/siswa/orangtua/" +
                         iDisplayIndex.id +
                         "\" class=\"btn bg-purple btn-update btn-xs\" title=\"Data Orang Tua\"><i class=\"fa fa-pencil\"></i> Orang Tua</button>";
-                    // result += "<button href=\"" + __base_url + "admin/akademik/siswa/delete/" +
-                    //     iDisplayIndex.id +
-                    //     "\" class=\"btn btn-danger btn-delete btn-xs\" title=\"Delete\"><i class=\"fa fa-minus\"></i> Delete</button>";
+                    result += "<button href=\"" + __base_url + "admin/akademik/siswa/delete/" +
+                        iDisplayIndex.id +
+                        "\" class=\"btn btn-danger btn-delete btn-xs\" title=\"Delete\"><i class=\"fa fa-minus\"></i> Delete</button>";
                     return result;
                 }
             },
