@@ -201,7 +201,7 @@ $(document).ready(function() {
                         iDisplayIndex.id +
                         "\" class=\"btn btn-danger btn-delete btn-xs\" title=\"Delete\"><i class=\"fa fa-minus\"></i> Delete</button>";
                     return result;
-                }
+                }//tambah komen, cuma mo cek
             },
         ],
         "order": [[0, 'desc']],
