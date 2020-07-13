@@ -26,8 +26,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 // $config['base_url'] = '';
 
-// $protocol = 'https://';
-$protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
+$protocol = 'https://';
+// $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
 // echo "protocol=========>>>>>>".$protocol;
 // echo "SERVER HTTP_HOST=>".$_SERVER['HTTP_HOST'];
 
