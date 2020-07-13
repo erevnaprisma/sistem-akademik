@@ -62,25 +62,25 @@ $(document).ready(function() {
                     b.attr('title', 'CREATE');
                 },
             },
-            {
-                text: "Import",
-                className: "btn btn-create btn-warning fa fa-plus",
-                init: function(a, b, c) {
-                    b.attr('href', __base_url + 'admin/akademik/siswa/import');
-                    b.attr('title', 'IMPORT');
-                },
-            },
-            {
-                text: "Template",
-                className: "btn btn-info fa fa-plus",
-                init: function(a, b, c) {
-                    // b.attr('href', __base_url + 'assets/public/doc/import_siswa.xls');
-                    b.attr('title', 'TEMPLATE');
-                },
-                action: function ( e, dt, button, config ) {
-                    window.open(__base_url + 'assets/public/doc/import_siswa.xls','_blank');
-                } 
-            },
+            // {
+            //     text: "Import",
+            //     className: "btn btn-create btn-warning fa fa-plus",
+            //     init: function(a, b, c) {
+            //         b.attr('href', __base_url + 'admin/akademik/siswa/import');
+            //         b.attr('title', 'IMPORT');
+            //     },
+            // },
+            // {
+            //     text: "Template",
+            //     className: "btn btn-info fa fa-plus",
+            //     init: function(a, b, c) {
+            //         // b.attr('href', __base_url + 'assets/public/doc/import_siswa.xls');
+            //         b.attr('title', 'TEMPLATE');
+            //     },
+            //     action: function ( e, dt, button, config ) {
+            //         window.open(__base_url + 'assets/public/doc/import_siswa.xls','_blank');
+            //     } 
+            // },
         ],
         "processing": true,
         "serverSide": true,
@@ -201,7 +201,7 @@ $(document).ready(function() {
                         iDisplayIndex.id +
                         "\" class=\"btn btn-danger btn-delete btn-xs\" title=\"Delete\"><i class=\"fa fa-minus\"></i> Delete</button>";
                     return result;
-                }//tambah komen, cuma mo cek
+                }
             },
         ],
         "order": [[0, 'desc']],
