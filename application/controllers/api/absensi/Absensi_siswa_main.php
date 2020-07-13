@@ -14,6 +14,9 @@ class Absensi_siswa_main extends REST_Controller
         //$this->load->model('absensi/m_get_siswa');
         $this->load->model('absensi/m_absensi_siswa_main');
     }
+    public function create_post(){
+        
+    }
 
     /*public function create_post()
     {
