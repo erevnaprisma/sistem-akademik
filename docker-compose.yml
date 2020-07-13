@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  sistemakademik:
+    image: docker.io/opetstudio/sistemakademik:latest
+    environment:
+      SERVICE_VARIANT: lms
+    restart: unless-stopped
+    volumes:
+      - ./:/var/www/html/
+    ports:
+      - "8980:80"
+  
