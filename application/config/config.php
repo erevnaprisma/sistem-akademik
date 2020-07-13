@@ -26,12 +26,21 @@ defined('BASEPATH') or exit('No direct script access allowed');
 */
 // $config['base_url'] = '';
 
-$protocol = 'https://';
+$uri = $_SERVER['REQUEST_URI'];
+// echo $uri; // Outputs: URI
+ 
+$protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
+ 
+$url = $protocol . $_SERVER['HTTP_HOST'].'/';
+$config['base_url'] = $url;
+// $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
+
+// $protocol = 'https://';
 // $protocol = stripos($_SERVER['SERVER_PROTOCOL'],'https') === 0 ? 'https://' : 'http://';
 // echo "protocol=========>>>>>>".$protocol;
 // echo "SERVER HTTP_HOST=>".$_SERVER['HTTP_HOST'];
 
-$config['base_url'] = $protocol.$_SERVER['HTTP_HOST'].'/';
+// $config['base_url'] = $protocol.$_SERVER['HTTP_HOST'].'/';
 // echo "config base_url".$config['base_url'];
 // $config['base_url'] = 'https://'.$_SERVER['HTTP_HOST'];
 // $config['base_url'] .= preg_replace('@/+$@', '', dirname($_SERVER['SCRIPT_NAME'])).'/';
