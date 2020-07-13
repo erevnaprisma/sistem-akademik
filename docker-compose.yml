@@ -9,4 +9,16 @@ services:
       - ./:/var/www/html/
     ports:
       - "8980:80"
+    depends_on:
+      - mysql
+  mysql:
+    image: docker.io/mysql:5.6.36
+    command: mysqld --character-set-server=utf8 --collation-server=utf8_general_ci
+    restart: unless-stopped
+    volumes:
+      - "/Users/anvere/Library/Application Support/tutor/data/mysql:/var/lib/mysql"
+    environment:
+      MYSQL_ROOT_PASSWORD: "vNCWXnYd"
+    ports: 
+      - "3306:3306"
   
