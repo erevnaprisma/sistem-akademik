@@ -1,26 +1,3 @@
-.DS_Store
-
-application/cache/*
-!application/cache/index.html
-
-application/logs/*
-!application/logs/index.html
-
-!application/*/.htaccess
-
-composer.lock
-
-user_guide_src/build/*
-user_guide_src/cilexer/build/*
-user_guide_src/cilexer/dist/*
-user_guide_src/cilexer/pycilexer.egg-info/*
-/vendor/
-
-# path attach
-assets/public/*
-assets/backup/*
-assets/conf/config.json
-
 # IDE Files
 #-------------------------
 /nbproject/
@@ -32,16 +9,4 @@ assets/conf/config.json
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
-/tests/tests/
-/tests/results/
 
-._*
-build-release.sh
-contributing.md
-readme.rst
-
-system_3_1_6/
-system_3_1_12/
-*.log
-README2.md
-*.psd
