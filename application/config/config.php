@@ -25,14 +25,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
 |
 */
 // $config['base_url'] = '';
-
+$file = FCPATH . 'assets/conf/config.json';
+if(!file_exists($file)){
+    die('application not config, call administrator');
+}
+$conf = json_decode(file_get_contents($file));
 $uri = $_SERVER['REQUEST_URI'];
 // echo $uri; // Outputs: URI
  
 $protocol = ((!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] != 'off') || $_SERVER['SERVER_PORT'] == 443) ? "https://" : "http://";
  
 $url = $protocol . $_SERVER['HTTP_HOST'].'/';
-$config['base_url'] = $url;
+$config['base_url'] = $conf->base_url;
 // $url = $protocol . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
 
 // $protocol = 'https://';
